@@ -15,6 +15,7 @@ async function run() {
             title: issueTitle,
             body: jokeBody
         });
+        console.log(`this is the jokebody: ${jokeBody}`);
     } catch (err) {
         core.setFailed(err.message);
     }
